@@ -79,7 +79,7 @@ public class Cashier extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        basePanel.setBackground(new java.awt.Color(232, 232, 232));
+        basePanel.setBackground(new java.awt.Color(126, 255, 182));
         basePanel.setPreferredSize(new java.awt.Dimension(1400, 700));
 
         jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
@@ -88,50 +88,110 @@ public class Cashier extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jButton1.setText("1");
         jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jButton2.setText("2");
         jButton2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jButton3.setText("3");
         jButton3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jButton4.setText("4");
         jButton4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         jButton5.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jButton5.setText("5");
         jButton5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton5ActionPerformed(evt);
+            }
+        });
 
         jButton6.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jButton6.setText("6");
         jButton6.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
 
         jButton7.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jButton7.setText("7");
         jButton7.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
 
         jButton8.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jButton8.setText("8");
         jButton8.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton8ActionPerformed(evt);
+            }
+        });
 
         jButton9.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jButton9.setText("9");
         jButton9.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
 
         jButton0.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jButton0.setText("0");
         jButton0.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButton0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton0ActionPerformed(evt);
+            }
+        });
 
         jButtonPeriod.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jButtonPeriod.setText(".");
         jButtonPeriod.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButtonPeriod.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonPeriodActionPerformed(evt);
+            }
+        });
 
         jButtonCancel.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jButtonCancel.setText("C");
         jButtonCancel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButtonCancel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonCancelActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -198,15 +258,21 @@ public class Cashier extends javax.swing.JFrame {
 
         jButtonAdd.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jButtonAdd.setText("ADD");
+        jButtonAdd.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jButtonEdit.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jButtonEdit.setText("EDIT");
+        jButtonEdit.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
+        jButtonDelete.setBackground(new java.awt.Color(255, 166, 166));
         jButtonDelete.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jButtonDelete.setText("DELETE");
+        jButtonDelete.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
+        jButtonClearAll.setBackground(new java.awt.Color(255, 166, 166));
         jButtonClearAll.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jButtonClearAll.setText("CLEAR ALL");
+        jButtonClearAll.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButtonClearAll.setPreferredSize(new java.awt.Dimension(150, 54));
 
         jLabelProductName.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
@@ -319,13 +385,11 @@ public class Cashier extends javax.swing.JFrame {
         jLabelSubTotal.setText("SUBTOTAL :");
 
         jTextFieldSubTotal.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jTextFieldSubTotal.setText("jTextField4");
 
         jLabelTotal.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabelTotal.setText("TOTAL :");
 
         jTextFieldTotal.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jTextFieldTotal.setText("jTextField4");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -422,6 +486,7 @@ public class Cashier extends javax.swing.JFrame {
         jButtonReset.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButtonReset.setPreferredSize(new java.awt.Dimension(81, 50));
 
+        jButtonPay.setBackground(new java.awt.Color(145, 164, 255));
         jButtonPay.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jButtonPay.setText("PAY");
         jButtonPay.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -432,10 +497,16 @@ public class Cashier extends javax.swing.JFrame {
         jButtonRemove.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButtonRemove.setPreferredSize(new java.awt.Dimension(81, 50));
 
+        jButtonExit.setBackground(new java.awt.Color(255, 166, 166));
         jButtonExit.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jButtonExit.setText("EXIT / DONE");
         jButtonExit.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButtonExit.setPreferredSize(new java.awt.Dimension(81, 50));
+        jButtonExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonExitActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -447,7 +518,7 @@ public class Cashier extends javax.swing.JFrame {
                     .addComponent(jButtonExit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addComponent(jButtonPrint, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
                         .addComponent(jButtonReset, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addComponent(jButtonPay, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -510,8 +581,7 @@ public class Cashier extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 471, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         basePanelLayout.setVerticalGroup(
@@ -544,6 +614,159 @@ public class Cashier extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+//=====================Function Total====================
+    public void ItemCost() {
+        double sum = 0;
+        
+        for(int i = 0; i < jTable1.getRowCount(); i++) {
+            sum = sum + Double.parseDouble(jTable1.getValueAt(i, 3).toString());
+        }
+        
+        jTextFieldSubTotal.setText(Double.toHexString(sum));
+        double sTotal = Double.parseDouble(jTextFieldSubTotal.getText());
+                
+        String iTotal = String.format("RM %.2f", sTotal);
+        jTextFieldTotal.setText(iTotal);
+    }
+
+//=====================Function change====================
+    public void Change() {
+        double sum = 0;
+        double cash = Double.parseDouble(jTextFieldSubTotal.getText());
+        
+        for(int i = 0; i < jTable1.getRowCount(); i++) {
+            sum = sum + Double.parseDouble(jTable1.getValueAt(i, 3).toString());
+        }
+        
+        double cChange = (cash - sum);
+        
+        String ChangeGiven = String.format("RM %.2f" , cChange);
+        jTextFieldChange.setText(ChangeGiven);
+    }
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        String EnterNumber = jTextFieldCash.getText();
+        
+        if(EnterNumber == "") {
+            jTextFieldCash.setText(jButton1.getText());
+        } else {
+            EnterNumber = jTextFieldCash.getText() + jButton1.getText();
+            jTextFieldCash.setText(EnterNumber);
+        }
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        String EnterNumber = jTextFieldCash.getText();
+        
+        if(EnterNumber == "") {
+            jTextFieldCash.setText(jButton2.getText());
+        } else {
+            EnterNumber = jTextFieldCash.getText() + jButton2.getText();
+            jTextFieldCash.setText(EnterNumber);
+        }
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        String EnterNumber = jTextFieldCash.getText();
+        
+        if(EnterNumber == "") {
+            jTextFieldCash.setText(jButton3.getText());
+        } else {
+            EnterNumber = jTextFieldCash.getText() + jButton3.getText();
+            jTextFieldCash.setText(EnterNumber);
+        }
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        String EnterNumber = jTextFieldCash.getText();
+        
+        if(EnterNumber == "") {
+            jTextFieldCash.setText(jButton4.getText());
+        } else {
+            EnterNumber = jTextFieldCash.getText() + jButton4.getText();
+            jTextFieldCash.setText(EnterNumber);
+        }
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        String EnterNumber = jTextFieldCash.getText();
+        
+        if(EnterNumber == "") {
+            jTextFieldCash.setText(jButton5.getText());
+        } else {
+            EnterNumber = jTextFieldCash.getText() + jButton5.getText();
+            jTextFieldCash.setText(EnterNumber);
+        }
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        String EnterNumber = jTextFieldCash.getText();
+        
+        if(EnterNumber == "") {
+            jTextFieldCash.setText(jButton6.getText());
+        } else {
+            EnterNumber = jTextFieldCash.getText() + jButton6.getText();
+            jTextFieldCash.setText(EnterNumber);
+        }
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        String EnterNumber = jTextFieldCash.getText();
+        
+        if(EnterNumber == "") {
+            jTextFieldCash.setText(jButton7.getText());
+        } else {
+            EnterNumber = jTextFieldCash.getText() + jButton7.getText();
+            jTextFieldCash.setText(EnterNumber);
+        }
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        String EnterNumber = jTextFieldCash.getText();
+        
+        if(EnterNumber == "") {
+            jTextFieldCash.setText(jButton8.getText());
+        } else {
+            EnterNumber = jTextFieldCash.getText() + jButton8.getText();
+            jTextFieldCash.setText(EnterNumber);
+        }
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        String EnterNumber = jTextFieldCash.getText();
+        
+        if(EnterNumber == "") {
+            jTextFieldCash.setText(jButton9.getText());
+        } else {
+            EnterNumber = jTextFieldCash.getText() + jButton9.getText();
+            jTextFieldCash.setText(EnterNumber);
+        }
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton0ActionPerformed
+        String EnterNumber = jTextFieldCash.getText();
+        
+        if(EnterNumber == "") {
+            jTextFieldCash.setText(jButton0.getText());
+        } else {
+            EnterNumber = jTextFieldCash.getText() + jButton0.getText();
+            jTextFieldCash.setText(EnterNumber);
+        }
+    }//GEN-LAST:event_jButton0ActionPerformed
+
+    private void jButtonPeriodActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPeriodActionPerformed
+        if(! jTextFieldCash.getText().contains(".")) {
+            jTextFieldCash.setText(jTextFieldCash.getText() + jButtonPeriod.getText());
+        }
+    }//GEN-LAST:event_jButtonPeriodActionPerformed
+
+    private void jButtonCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCancelActionPerformed
+        jTextFieldCash.setText("");
+        jTextFieldChange.setText("");
+    }//GEN-LAST:event_jButtonCancelActionPerformed
+
+    private void jButtonExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonExitActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_jButtonExitActionPerformed
 
     /**
      * @param args the command line arguments
