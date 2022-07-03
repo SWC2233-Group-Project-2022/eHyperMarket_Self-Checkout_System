@@ -1,0 +1,7 @@
+#Folders
+build/
+private/
+
+#Files
+build.xml
+manifest.mf
