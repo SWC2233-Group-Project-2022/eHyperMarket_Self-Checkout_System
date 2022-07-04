@@ -863,18 +863,21 @@ public class Cashier extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonDeleteActionPerformed
 
     private void jButtonPrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPrintActionPerformed
+        //Print out reciept of table
         MessageFormat header = new MessageFormat("Total amount");
-        MessageFormat footer = new MessageFormat("Thank you and come again!" + 
+        MessageFormat footer = new MessageFormat(jTextFieldTotal.getText() + jTextFieldCash.getText() + jTextFieldChange.getText() +
+                                                 "Thank you and come again!" + 
                                                  "Page {0, number, integer}");
         
         try{
-            jTable1.print(JTable.PrintMode.NORMAL,header,footer);
+            jTable1.print(JTable.PrintMode.NORMAL, header, footer);
         } catch(java.awt.print.PrinterException e) {
             System.err.format("No printer found", e.getMessage());
         }
     }//GEN-LAST:event_jButtonPrintActionPerformed
 
     private void jButtonResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonResetActionPerformed
+        //Resetting all field and table
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
         model.setRowCount(0);
         jTextFieldSubTotal.setText("");
@@ -887,20 +890,22 @@ public class Cashier extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonResetActionPerformed
 
     private void jButtonPayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPayActionPerformed
-        if(jTable1.getRowCount() <= 5) {
+        //Pay button
+        if(jTable1.getRowCount() <= 5) { //If items is less than 5, ask customers/user to use another cashier by running ChangeCashier method
             ChangeCashier();
-        } else if(jComboBoxPayment.getSelectedItem().equals("CASH")) {
+        } else if(jComboBoxPayment.getSelectedItem().equals("CASH")) { //Default payment cash
             Change();
-        } else if(jComboBoxPayment.getSelectedItem().equals("DEBIT")) {
+        } else if(jComboBoxPayment.getSelectedItem().equals("DEBIT")) { //If user/customers select other than Cash, prompt that this service is un available
             JOptionPane.showMessageDialog(rootPane, "This service is currently offline and unavailable, please choose another.");
-        } else if(jComboBoxPayment.getSelectedItem().equals("CREDIT")) {
+        } else if(jComboBoxPayment.getSelectedItem().equals("CREDIT")) { //If user/customers select other than Cash, prompt that this service is un available
             JOptionPane.showMessageDialog(rootPane, "This service is currently offline and unavailable, please choose another.");
-        } else {
+        } else { //Else print out message error and call nearest staff for assistance
             JOptionPane.showMessageDialog(rootPane, "Invalid response, call staff", "ERROR!" , JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_jButtonPayActionPerformed
 
     private void jButtonUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonUpdateActionPerformed
+        //Edit the table by using this button, if customers ever did something wrong
         int i = jTable1.getSelectedRow();       
         String data1 = jTextField1.getText();
         double data2 = Double.parseDouble(jTextField2.getText());
